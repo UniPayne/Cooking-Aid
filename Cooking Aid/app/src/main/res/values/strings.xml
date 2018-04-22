@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Cooking Aid</string>
+
+    <string name="wilkommen_cooking_aid">Wilkommen bei Cooking Aid!</string>
+
+
+
+<!-- Beschriftung activity_main.xml-->
+
+    <string name="zufall">Zufallsrezept</string>
+    <string name="suche_nach_rezept">Suche nach Rezept</string>
+    <string name="suche_durch_lebensmittel">Suche durch Lebensmittel</string>
+    <string name="einkaufszettel">Einkaufszettel</string>
+    <string name="erstellen">Rezept erstellen</string>
+
+
+<!-- Beschriftung zufall_rezept.xml -->
+    <string name="infoZR">Hier! Probier das Rezept mal aus! </string>
+    <string name="neues_rezept">Neues Rezept</string>
+    <string name="zufalls_rezept_ausgeben">Zufalls Rezept ausgeben</string>
+
+
+<!--Beschriftung suche_rezept.xml -->
+    <string name="infoSR">Hier kannst du nach Rezepten suchen!</string>
+
+<!--Beschriftung suche_durch_lebensmittel.xml -->
+    <string name="infoSDL">Suche ein Rezept mithilfe von Lebensmitteln!</string>
+
+
+
+<!--BeschriftEinkaufszettelttel.xml -->
+    <string name="infoEinkaufszettel">Hier können sie Ihren Einkaufszettel erstellen!</string>
+
+<!--Beschriftung einkaufszettelpopup.xml -->
+    <string name="_berschrift">Einkaufszettel</string>
+    <string name="zutat_einf_gen">Zutat einfügen</string>
+    <string name="abbrechen">abbrechen</string>
+    <string name="hizuf_gen">hinzufügen</string>
+
+
+ <!-- einkaufszettelmenueiste -->
+    <string name="einkaufsliste_erstellen">Einkaufsliste erstellen</string>
+
+
+<!--Beschriftung erstellen.xml -->
+    <string name="rezepterstellen_titel">Rezept hinzufügen</string>
+
+    <string name="rezepterstellen_rezeptname">Rezeptname:</string>
+    <string name="rezepterstellen_titel_standardtext">Rezeptname</string>
+
+    <string name="rezepterstellen_schwierigkeitsgrad">Schwierigkeitsgrad:</string>
+    <string name="rezepterstellen_schwierigkeitsgrad_standardtext">Normal</string>
+    <string name="rezepterstellen_schwierigkeitsgrad_dialogtitel">
+        Bitte wählen Sie einen Schwierigkeitsgrad aus</string>
+
+    <string name="rezepterstellen_dauer">Dauer:</string>
+    <string name="rezeopterstellen_dauer_standardtext">Benötigte Dauer</string>
+
+	<string name="button_hinzufuegen">Zutaten hinzufügen</string>
+    <string name="zurueck">zurück</string>
+    <string name="weiter">weiter</string>
+
+    <string name="einstellungen">Einstellungen</string>
+    <string name="einstellungenText">Hier folgen Einstellungen</string>
+
+
+    <string name="ueberschrift_schwierigkeitsgrad">Schwierigkeitsgrad</string>
+
+<!-- BeschriftHilfeilfe.xml -->
+    <string name="infoHilfe">Hilfestellung zur bedienung unserer App!</string>
+    <string name="hilfe_text">bla bla bla</string>
+
+
+
+<!-- Allgemeine Button Beschriftungen -->
+    <string name="button_ok">Bestätigen</string>
+    <string name="button_abbruch">Abbrechen</string>
+    <string name="einkaufsliste">Einkaufsliste</string>
+
+    <string name="maßeinheit_waehlen">Bitte wählen Sie eine Maßeinheit aus</string>
+
+
+
+</resources>

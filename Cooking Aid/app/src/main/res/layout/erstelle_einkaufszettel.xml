@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/bild"
+
+    >
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+
+        android:layout_marginBottom="8dp"
+        >
+
+        <EditText
+            android:id="@+id/menge"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/schrifthintergrund_style"
+            android:hint="Anzahl"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:maxLength="3"
+            />
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="Produkt"
+            android:id="@+id/liste_zutat"
+            android:layout_weight="4"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/schrifthintergrund_style"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:maxLength="50"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/plus"
+            style="@style/ButtonStyle"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/schrifthintergrund_style"
+
+        >
+
+        <ListView
+            android:id="@+id/listview_shopping_memos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/zurueck"
+            style="@style/ButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/zurueck"
+            android:layout_marginLeft="20dp"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+

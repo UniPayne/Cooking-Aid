@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bild"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        style="@style/ueberschriften_norm"
+        android:id="@+id/textView"
+        android:text="Anweisungen hizufügen"
+
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+
+
+        >
+
+        <TextView
+            android:id="@+id/schritt"
+            android:text="Schritt:"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/anweisung_schritt"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:hint="nummer"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:maxLength="3"
+            android:textColor="@android:color/black"
+            android:background="@drawable/schrifthintergrund_style"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+    <TextView
+
+        android:layout_width="112dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:text="Anweisung:"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/schrifthintergrund_style"
+        >
+
+        <EditText
+            android:id="@+id/anweisung"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:hint="hier die Anweisungen einfügen"
+            android:inputType="textMultiLine"
+            android:maxLength="255"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        >
+
+
+        <Button
+            android:id="@+id/anweisung_plus"
+            style="@style/ButtonStyle"
+            android:layout_width="285dp"
+            android:layout_height="match_parent"
+            android:text="weitere Anweisung"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/zurueck"
+            style="@style/ButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/zurueck"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="left"
+            />
+
+        <Button
+            android:id="@+id/anweisung_speichern"
+            style="@style/ButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="fertig" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/zwibel2"
+    android:orientation="vertical"
+    tools:context="com.example.paul.myapplication.ErstelleRezeptZutat">
+
+
+
+    <TextView
+        style="@style/ueberschriften_norm"
+        android:id="@+id/textView"
+        android:text="@string/rezepterstellen_titel"
+
+        />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/schrifthintergrund_style">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="3dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Zutat:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/zutaten"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="3dp"
+                android:hint="Zutat"
+                android:maxLength="40"
+                android:textColor="@android:color/black"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Menge:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/menge"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="3dp"
+                android:hint="Menge"
+                android:maxLength="40"
+                android:inputType="numberDecimal"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Maßeinheit:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/maßeinheit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:hint="Maßeinheit"
+                android:onClick="maßeinheitDialog"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                />
+
+
+           <!-- <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="maßeinheitDialog"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:hint="Maßeinheit"
+                style="@style/ButtonStyle"
+                android:layout_gravity="center"
+                />-->
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="8dp"
+        >
+
+        <Button
+            android:layout_marginLeft="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="mehr"
+            android:text="+"
+            style="@style/ButtonStyle"
+            android:layout_gravity="left"
+            />
+
+
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/schrifthintergrund_style"
+        >
+
+        <ListView
+            android:id="@+id/zutaten_liste"
+            android:layout_width="match_parent"
+            android:layout_height="210dp">
+
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+
+        >
+
+
+        <Button
+            android:id="@+id/zurueck"
+            style="@style/ButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/zurueck"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="left"
+            />
+
+        <Button
+            android:id="@+id/zutaten_weiter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="mehr"
+            android:layout_marginLeft="80dp"
+            android:text="@string/weiter"
+            style="@style/ButtonStyle"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+
+</LinearLayout>

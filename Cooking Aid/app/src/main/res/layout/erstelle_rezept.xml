@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orange2"
+    android:orientation="vertical">
+
+
+    <TextView
+        style="@style/ueberschriften_norm"
+        android:id="@+id/textView"
+        android:text="@string/rezepterstellen_titel"
+        />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/schrifthintergrund_style">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/rezepterstellen_rezeptname"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+               />
+
+            <EditText
+                android:id="@+id/rezept_titel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:hint="@string/rezepterstellen_titel_standardtext"
+                android:inputType="textPersonName"
+                android:maxLength="30"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="@string/rezepterstellen_schwierigkeitsgrad"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/rezepterstellen_schwierigkeitsgrad"
+                android:layout_width="207dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:hint="@string/rezepterstellen_schwierigkeitsgrad_standardtext"
+                android:inputType="text"
+                android:onClick="sgradDialog"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="97dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/rezepterstellen_dauer"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dauer_textfeld"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:hint="@string/rezeopterstellen_dauer_standardtext"
+                android:inputType="time"
+                android:maxLength="10"
+                android:onClick="dauerDialog"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="240dp"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/zurueck"
+            style="@style/ButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/zurueck"
+
+            />
+
+        <Button
+            android:id="@+id/zutaten_hinzufuegen"
+            style="@style/ButtonStyle"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_hinzufuegen"
+            android:layout_marginLeft="50dp"
+
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+
